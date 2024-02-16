@@ -2,6 +2,7 @@ import { Navbar, Nav, NavItem, FormControl, Button } from "react-bootstrap";
 import Logo from "../assets/img/logo.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import { Link } from "react-router-dom";
 
 const SidebarComponent = () => {
   return (
@@ -20,22 +21,20 @@ const SidebarComponent = () => {
           <Nav className="navbar-nav">
             <ul>
               <NavItem>
-                <Nav.Link
-                  href="#"
+                <Link
+                  to="/"
                   className="nav-item nav-link d-flex align-items-center"
                 >
-                  <i className="bi bi-house-door-fill"></i>
-                  &nbsp; Home
-                </Nav.Link>
+                  <i className="bi bi-house-door-fill"></i>&nbsp; Home
+                </Link>
               </NavItem>
               <NavItem>
-                <Nav.Link
-                  href="#"
+                <Link
+                  to="/preferiti"
                   className="nav-item nav-link d-flex align-items-center"
                 >
-                  <i className="bi bi-book-fill"></i>
-                  &nbsp; Your Library
-                </Nav.Link>
+                  <i className="bi bi-book-fill"></i>&nbsp; Your Library
+                </Link>
               </NavItem>
               <NavItem>
                 <div className="input-group mt-3">

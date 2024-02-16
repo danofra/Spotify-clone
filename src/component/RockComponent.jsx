@@ -5,7 +5,7 @@ const RockComponent = () => {
     <Row>
       <Col>
         <div id="rock">
-          <h2>Rock Classics</h2>
+          <h2>Gothic Metal</h2>
           <Row
             className="row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4"
             id="rockSection"
